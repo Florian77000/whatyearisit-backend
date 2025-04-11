@@ -2,7 +2,7 @@ var express = require("express");
 var router = express.Router();
 
 router.get("/", (req, res) => {
-  res.json({ year: new Date().getFullYear() });
+  res.json({ year: String(new Date().getFullYear()) });
 });
 
 module.exports = router;
